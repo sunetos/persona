@@ -58,8 +58,6 @@ def bitey_import(pkg, force_build=False):
 
     subprocess.call(['clang', '-emit-llvm', '-c', c_path])
 
-  #globals()[pkg] = __import__(pkg)
-
 # Monkey-patch bitey to do our auto-generation first.
 old_check_magic = bitey.loader._check_magic
 def _check_magic(filename):
