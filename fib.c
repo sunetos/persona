@@ -1,7 +1,14 @@
+#include <math.h>
+
 struct Point {
   float x;
   float y;
 };
+
+float distance(struct Point *p1, struct Point* p2) {
+  return sqrt((p1->x - p2->x)*(p1->x - p2->x) +
+              (p1->y - p2->y)*(p1->y - p2->y));
+}
 
 int fib(int n) {
   if (n < 3) {

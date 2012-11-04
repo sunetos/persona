@@ -1,0 +1,3 @@
+[submodule "extern/bitey"]
+	path = extern/bitey
+	url = https://github.com/dabeaz/bitey.git

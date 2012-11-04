@@ -5,3 +5,5 @@
 *.swp
 .session-lock
 .idea/
+*.pre.py
+*.o
